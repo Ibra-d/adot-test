@@ -55,15 +55,8 @@ main {
 .productInfos {
   flex-direction: row;
   gap: 1em;
+  margin-top: 2em;
 }
-
-.adressAndMaps {
-  text-align: center;
-  flex-direction: column;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 .promotion {
   height: 90px;
   width: 200px;
@@ -98,6 +91,41 @@ main {
   left: 0;
   mix-blend-mode: darken;
 }
+
+.adressAndMaps {
+  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8em;
+  gap: 1em;
+  translate: 0 10em;
+  display: none;
+}
+
+.navReverse {
+  display: flex;
+  translate: 0;
+}
+
+.text1 {
+  font-size: 1.2em;
+}
+
+.maps {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.maps iframe {
+  position: absolute;
+  left: 0;
+  top: -10em;
+}
+
 
 .linkAnimated {
   flex-direction: column;
