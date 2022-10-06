@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+:root {
+  --lLean-: #0a0b20;
+  --rLean-: #100611;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* All flex éléments */
+
+.allFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Elément container */
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to left, #100611, #0a0b20);
+}
+
+.container {
+  width: 375px;
+  flex-direction: column;
+  padding: 1em 0;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
+/* All elements in container with 100% width */
+
+.allElementChild {
+  width: 100%;
+}
+
+.videoContainer {
+  height: 240px;
+}
+
+.videoContainer video {
+  width: 100%;
+}
+
+.productInfos {
+  flex-direction: row;
+  gap: 1em;
+}
+
+.promotion {
+  height: 90px;
+  width: 200px;
+  border: 2px solid #eed099;
+  border-radius: 0.3em;
+  padding: 0 1em 0.1em;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.promotion span:nth-child(1) {
+  font-size: 4em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: -10px;
+}
+
+.promotion span:nth-child(2) {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+.calquer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: darken;
+}
+
+.linkAnimated {
+  flex-direction: column;
+  position: relative;
+  height: 100px;
+}
+
+.linkAnimated .chevron::before {
+  border-color: #eed099;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+  border-radius: 3px;
+	content: '';
+	display: inline-block;
+	height: 1.2em;
+	width: 1.2em;
+	left: 0.15em;
+	position: relative;
+	top: 0.15em;
+	transform: rotate(-45deg);
+	vertical-align: top;
+  animation: chev-up 2.5s infinite;
+}
+
+@keyframes chev-up {
+  20% {
+    translate: 0 -0.3em;
+  }
+
+    30% {
+    translate: 0;
+  }
+
+    40% {
+    translate: 0 -0.3em;
+  }
+
+      50% {
+    translate: 0;
+  }
+
+}
+
+.linkContainer {
+  background: url('./assets/calquer.png');
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -4em;
+}
+
+.linkContainer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.6em;
+  position: absolute;
+  top: 0.4em;
+}
