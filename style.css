@@ -57,6 +57,13 @@ main {
   gap: 1em;
 }
 
+.adressAndMaps {
+  text-align: center;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
 .promotion {
   height: 90px;
   width: 200px;

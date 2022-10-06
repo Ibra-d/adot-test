@@ -1,6 +1,8 @@
-
 // Animation when the video stop
 
-const video = document.querySelector('.videoContainer > video')
+const video = document.querySelector(".videoContainer > video");
+const videoContainer = document.querySelector(".videoContainer");
 
-console.log(video);
+video.onended = function () {
+    videoContainer.style.display = 'none'
+}
