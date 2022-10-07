@@ -1,56 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>ADOT-TEST</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>ADOT-TEST</title>
   </head>
   <body>
     <main class="allFlex">
-      <div class="container allFlex">
-        <div class="logoContainer allFlex allElementChild">
-          <img src="./assets/LOGO.png" width="130" />
-        </div>
-        <div class="videoContainer allFlex allElementChild">
-          <video src="./assets/video.mov" autoplay muted></video>
-        </div>
-        <div class="scrollVideoEnded">
-          <div class="productInfos allFlex allElementChild">
-            <img src="./assets/Produit.png" width="80" />
-            <div class="promotion allFlex">
-              <span>-40%</span>
-              <span>sur votre deodorant.</span>
-              <img src="./assets/calquer.png" class="calquer" />
+        <div class="container allFlex">
+            <div class="logoContainer allFlex">
+                <img src="./assets/LOGO.png" width="100">
             </div>
-          </div>
-          <!-- <div class="adressAndMaps allFlex">
-            <span class="text1">retrouve ton déodorant chez</span>
-            leclerc <br />
-            rn 113 <br />
-            aigues vives 30670
-            <div class="maps">
-              <iframe
-                src="https://my.atlistmaps.com/map/7209ec84-7bcf-4320-abbf-360b008ec864?share=true"
-                allow="geolocation"
-                width="100%"
-                height="400px"
-                frameborder="0"
-                scrolling="no"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div> -->
-        </div>
+            <div class="containerAnimated">
+                <div class="firstcontainerAnimatedChild">
+                <div class="videoContainer" id="hided">
+                    <video src="./assets/video.mov" width="400" autoplay muted></video>
+                </div>         
+                <div class="productInfos allFlex">
+                    <img src="./assets/Produit.png" width="80">
+                    <div class="promo">
+                        <span>-40%</span>
+                        <p>sur votre déodorant</p>
+                        <img src="./assets/calquer.png" class="calquer">
+                    </div>
+                </div>
+                <div class="mapsDetails allFlex" id="showed">
+                    <div class="chevron"></div>
+                    <div class="before">
+                    <p class="sizePlus">
+                        retrouve ton déodorant chez
+                    </p>
+                    leclerc <br>
+                    rn 113 <br>
+                    aigues vives 30670
+                    <div class="mapsContainer allFlex">
+                        <iframe
+                        src="https://my.atlistmaps.com/map/7209ec84-7bcf-4320-abbf-360b008ec864?share=true"
+                        allow="geolocation"
+                        width="100%"
+                        height="400px"
+                        frameborder="0"
+                        scrolling="no"
+                        allowfullscreen
+                        ></iframe>
+                    </div>
+                    </div>
 
-        <div class="linkAnimated allFlex allElementChild">
-          <span class="chevron"></span>
-          <div class="linkContainer allFlex">
-            <a href="">en profiter</a>
-          </div>
+                </div>
+                </div>
+
+            </div>
+            <div class="linkContainer  allFlex">
+                <div class="content allFlex">
+                    <a class="first" href="#">
+                        en profiter
+                    </a>
+                    <a class="second" 
+                    href="https://www.google.fr/maps/search/leclerc+rn+113+aigues+vives+30670/@43.7672584,4.0811589,10z/data=!3m1!4b1"
+                    target="_blank
+                    "
+                    >
+                        j'y vais
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </main>
   </body>
   <script src="./app.js"></script>
