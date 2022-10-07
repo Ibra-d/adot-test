@@ -8,9 +8,14 @@ const link = document.querySelector(".linkContainer > a");
 const linkAnimated = document.querySelector(".linkAnimated");
 
 video.onended = function () {
-  videoContainer.style.display = "none";
+  videoContainer.style.scale = "0";
+  if ((videoContainer.style.scale = "0")) {
+    setTimeout(() => {
+    videoContainer.style.display='none'
   navigation.classList.add("navReverse");
+    }, 1000);
+  }
   chevron.style.display = "none";
-  link.textContent = "j'y vais";
-  linkAnimated.style.height = "50px";
+ link.textContent = "j'y vais";
+ linkAnimated.style.height = "60px";
 };
