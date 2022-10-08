@@ -32,8 +32,9 @@ main {
 }
 
 .container {
+  border: 1px solid var(--dorée-);
+  border-radius: 1em;
   width: 375px;
-  border: 1px solid white;
   overflow: hidden;
   flex-direction: column;
 }
@@ -57,10 +58,6 @@ main {
   opacity: 0;
   transition: 1.5s;
 }
-
-/*.containerToUp .chevron {
-  display: none;
-}*/
 
 .containerToUp .mapsDetails {
   height: 200px;
