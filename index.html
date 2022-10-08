@@ -14,16 +14,25 @@
             <div class="logoContainer allFlex">
                 <img src="./assets/LOGO.png" width="100">
             </div>
+            <!--
+                Container animé une fois la vidéo terminé
+            -->
             <div class="containerAnimated">
                 <div class="firstcontainerAnimatedChild">
                 <div class="videoContainer" id="hided">
-                    <video src="./assets/video.mov" width="400" autoplay muted></video>
+                    <video src="./assets/video.mov" width="400" autoplay></video>
                 </div>         
                 <div class="productInfos allFlex">
                     <img src="./assets/Produit.png" width="80">
                     <div class="promo">
                         <span>-40%</span>
                         <p>sur votre déodorant</p>
+                        <!--
+                            Calque sur le text avant l'animation,
+                            apres l'animation la propriete translate 
+                            annulera l'effet mix blend-mode
+                            et on utilisera la couleur dorée
+                        -->
                         <img src="./assets/calquer.png" class="calquer">
                     </div>
                 </div>

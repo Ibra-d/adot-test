@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
-
+/*
+J'ai pas pu trouver la police exact utilisé dans l'example
+de la video, donc j'ai opté pour Poppins
+*/
 :root {
   --lLean-: #0a0b20;
   --rLean-: #100611;
@@ -15,7 +18,10 @@ html,body {
   user-select: none;
 }
 
-/* Tous les elements flex*/
+/*
+Pour eviter d'ecrire plusieurs fois les propriété flex
+la class "allFlex" est donné a tous les elements flexable
+*/
 
 .allFlex {
   display: flex;
@@ -48,6 +54,11 @@ main {
   overflow: hidden;
 }
 
+/*
+La cl ss "containerToUp" sera attribué a containerAnimated
+une fois la video terminé et declenche l'animation
+*/
+
 .containerToUp {
   translate: 0 -13em;
   transition: 1s ;
@@ -70,6 +81,8 @@ main {
 .containerToUp .promo {
   color: var(--dorée-);
 }
+
+/**/
 
 .videoContainer {
   height: 200px;
@@ -120,6 +133,12 @@ main {
   font-weight: bold;
 }
 
+/*
+J'ai toujours opté pour FontAwesome
+pour les icones, mais vu qu'on est en natif
+j'ai opté pour un before
+*/
+
 .chevron::before {
 	border-style: solid;
   border-color: var(--dorée-);
@@ -154,6 +173,11 @@ main {
     translate: 0;
   }
 }
+
+/*
+chevronUp sera donné a l'element chevron une fois
+la video terminé et decle,che l'animation de celui ci
+*/
 
 .chevronUp {
   transition: 1s;
@@ -206,6 +230,11 @@ main {
  translate: 0 3em;
 }
 
+/*
+la class 'linkTextChange' permettra d'animer 
+le text de redirection une fois la video terminé
+*/
+
 .linkTextChange {
   overflow: hidden;
 }
@@ -217,3 +246,7 @@ translate: 0 -3em;
 .linkTextChange a.second {
   translate: 0;
 }
+
+/*
+J'espere avoir été a la hauteur 🙂
+*/
